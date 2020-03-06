@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Javascript excercises">
+    <meta name="author" content="Silviu Rosca">
+    <meta property="og:title" content="Javascript excercises">
+    <meta property="og:site_name" content="JS Training"/>
+    <meta property="og:description" content="Javascript excercises">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jstraining.canarcis.com/">
+    <meta property="og:image" content="https://jstraining.canarcis.com/og-image.jpg">
+    <meta property="og:image:secure_url" content="https://jstraining.canarcis.com/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="900">
+    <title>Excerciții algoritmice</title>
+    <link rel="icon" href="favicon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css?v=1.3">
+</head>
+<body>
+    <section class="default-section">
+        <div class="container">
+            <header class="default-section-header">
+                <img src="assets/img/logo.svg" alt="JS Logo" width="100">
+                <h1>Excerciții algoritmice.</h1>
+            </header>
+
+            <div class="default-section-body">
+                <div class="exercise-form-component" id="calculator">
+                    <div class="exercise-question">
+                        <figure class="item-no">01</figure>
+                        <h3>Să se scrie un program care să inverseze cifrele unui număr, suma lor și să afișeze prima cifră a numărului.</h3>
+                    </div>
+
+                    <form class="exercise-form">
+                        <input type="number" class="input-number" placeholder="Introdu un număr" min="0" step="1" required>
+                        <button type="button" class="exercise-form-submit" title="Calculează"></button>
+                    </form>
+
+                    <div class="exercise-results">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="exercise-result-block" id="inversed-digits">
+                                    <h4>Cifrele inversate</h4>
+                                    <figure class="exercise-result" title="">
+                                        <i class="fas fa-minus"></i>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="exercise-result-block" id="sum-digits">
+                                    <h4>Suma cifrelor</h4>
+                                    <figure class="exercise-result" title="">
+                                        <i class="fas fa-minus"></i>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="exercise-result-block" id="first-digit">
+                                    <h4>Prima cifră</h4>
+                                    <figure class="exercise-result" title="">
+                                        <i class="fas fa-minus"></i>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <nav class="bottom-navigation">
+                    <ul>
+                        <li class="current-page"><a href="index.html">Exercițiul 01</a></li>
+                        <!-- <li><a href="exercise-02.html">Exercițiul 02</a></li>
+                        <li><a href="exercise-03.html">Exercițiul 03</a></li>
+                        <li><a href="exercise-04.html">Exercițiul 04</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js?v=1.3"></script>
+
+    <script>
+        const calculator = new OTO.Calculator(document.getElementById('calculator'), {
+            // Options
+        });
+
+        calculator.init();
+    </script>
+</body>
+</html>
