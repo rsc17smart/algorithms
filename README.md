@@ -1,2 +1,2 @@
-# Bubbles Generator
-Simple javascript bubbles animation.
+# Javascript algorithms
+Javascript algorithms exercises.
